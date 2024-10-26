@@ -14,6 +14,36 @@ body{
     color: #555;
 }
 
+/* ********************** */
+/* *********************** */
+/* REUSABLE STLYES */
+.container{
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+ }
+.grid{
+    display: grid;
+    column-gap:6.4rem;
+    row-gap: 9.6rem;
+    
+}
+
+.grid--center-v{
+    align-items: center;
+}
+
+.grid--2-cols{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+ /* ********************************8 */
+ /* ******************************** */
+
 .hero-section{
     background-color: #fdf2e9;
     padding:4.8rem 0 9.6rem 0;
@@ -37,8 +67,38 @@ body{
     line-height: 1.05;
     color: #333;
     margin-bottom: 3.2rem;
+    letter-spacing: -0.5px;
 }
 
+.heading-secondary{
+    font-size: 4.4rem;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+    letter-spacing: -0.5px;
+
+
+}
+
+.sub-heading{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #cf711c;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.7px;
+}
+.heading-tertiary{
+    font-size: 3.0rem;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: -0.5px;
+    margin-bottom: 3.2rem;
+
+
+}
 .hero-description{
     font-size: 2rem;
     line-height: 1.5;
@@ -160,3 +220,44 @@ header{
  .main-nav-link.nav-cta:active{
     background-color: #cf711c;
  }
+
+ .section-how{
+    padding: 9.6rem 0;
+ }
+
+ .step-img-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+ }
+
+ .step-img-box:before{
+    content: "";
+    display: block;
+    width: 60%;
+    border-radius: 50%;
+    padding-bottom: 60%;
+    background-color:#fdf2e9 ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+ .step-img{
+    width: 35%;
+ }
+
+ .step-number{
+    font-size: 9.6rem;
+    font-weight: 600;
+    color: #ddd;
+ }
+.step-description{
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+
+ 
